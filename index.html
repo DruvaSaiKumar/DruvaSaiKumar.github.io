@@ -1,0 +1,437 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Druva Sai Kumar Bobbilla</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F5F6F8; --surface:#FFFFFF; --ink:#0B1320; --muted:#5B6776; --line:#DCE1E8;
+  --accent:#1F5BD8; --accent-ink:#FFFFFF; --tint:#E8EFFC; --glow:rgba(31,91,216,.10);
+  --l1:#D3DAE6; --l2:#A9BFEA; --l3:#6F97E4; --l4:#1F5BD8;
+  --nav:rgba(245,246,248,.82);
+  --sans:'Geist','Segoe UI',system-ui,-apple-system,sans-serif;
+  --mono:'Geist Mono',ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#090E15; --surface:#0F1620; --ink:#EEF2F7; --muted:#8B97A7; --line:#1D2836;
+    --accent:#6FA0FF; --accent-ink:#08101D; --tint:#12203A; --glow:rgba(111,160,255,.12);
+    --l1:#243144; --l2:#2E4A7C; --l3:#4A78D0; --l4:#6FA0FF;
+    --nav:rgba(9,14,21,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#090E15; --surface:#0F1620; --ink:#EEF2F7; --muted:#8B97A7; --line:#1D2836;
+  --accent:#6FA0FF; --accent-ink:#08101D; --tint:#12203A; --glow:rgba(111,160,255,.12);
+  --l1:#243144; --l2:#2E4A7C; --l3:#4A78D0; --l4:#6FA0FF;
+  --nav:rgba(9,14,21,.8);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;padding-inline:20px;padding-block:0 40px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1120px;margin-inline:auto}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{text-wrap:balance}
+.mono{font-family:var(--mono)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* nav */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;margin-inline:-20px;padding-inline:20px;background:var(--nav);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;font-size:15px}
+.mark{width:34px;height:34px;border-radius:9px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:-.02em}
+.links{display:flex;align-items:center;gap:26px;font-size:14px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+.links .pill{color:var(--accent-ink);background:var(--accent);padding:8px 16px;border-radius:999px;font-weight:500}
+.links .pill:hover{color:var(--accent-ink);filter:brightness(1.08)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.55fr 1fr;gap:56px;align-items:center;padding-block:88px 64px}
+.status{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;color:var(--muted);border:1px solid var(--line);background:var(--surface);padding:6px 14px 6px 12px;border-radius:999px;margin-bottom:28px}
+.status i{width:8px;height:8px;border-radius:50%;background:#2BB673;box-shadow:0 0 0 4px rgba(43,182,115,.18)}
+h1{font-size:clamp(42px,6.4vw,84px);line-height:1.02;letter-spacing:-.035em;font-weight:600}
+h1 span{color:var(--accent)}
+.lede{font-size:clamp(18px,2vw,21px);color:var(--muted);max-width:56ch;margin:28px 0 36px;line-height:1.55}
+.lede b{color:var(--ink);font-weight:500}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:500;font-size:15px;text-decoration:none;border:1px solid var(--line);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{filter:brightness(1.06);transform:translateY(-1px)}
+.btn{transition:transform .15s ease,filter .15s ease}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 30px 60px -30px var(--glow),0 2px 0 var(--line)}
+.who{display:flex;align-items:center;gap:16px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.avatar{width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--l3),var(--l4));color:var(--accent-ink);display:grid;place-items:center;font-weight:600;font-size:22px;letter-spacing:-.03em;flex:none}
+.who b{display:block;font-weight:600;font-size:18px;line-height:1.25}
+.who span{font-size:14px;color:var(--muted)}
+.facts{margin:0;padding:6px 0 0;display:grid}
+.facts div{display:flex;justify-content:space-between;gap:20px;padding-block:13px;border-bottom:1px solid var(--line);font-size:14.5px}
+.facts div:last-child{border-bottom:0;padding-bottom:0}
+.facts dt{color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.facts dd{margin:0;text-align:right;font-weight:500}
+
+/* numbers */
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line)}
+.num{padding:34px 24px 34px 0;border-left:1px solid var(--line);padding-left:28px}
+.num:first-child{border-left:0;padding-left:0}
+.num b{display:block;font-size:clamp(38px,5vw,60px);font-weight:600;letter-spacing:-.04em;line-height:1}
+.num span{display:block;margin-top:10px;font-size:14px;color:var(--muted);max-width:22ch}
+
+/* clients */
+.clients{display:flex;flex-wrap:wrap;align-items:center;gap:14px 44px;padding-block:34px}
+.clients .eyebrow{margin-right:8px}
+.clients strong{font-size:20px;font-weight:600;letter-spacing:-.02em;color:var(--muted)}
+
+section{padding-block:96px 0}
+.head{display:grid;grid-template-columns:1fr 2fr;gap:32px;margin-bottom:48px;align-items:end}
+h2{font-size:clamp(32px,4.4vw,52px);line-height:1.05;letter-spacing:-.03em;font-weight:600;max-width:18ch}
+.head p{color:var(--muted);max-width:52ch;font-size:18px}
+
+/* pipeline */
+.pipe{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:34px 34px 28px;overflow:hidden}
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.stage{padding-top:20px;position:relative}
+.stage::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;border-radius:4px;background:var(--c)}
+.stage b{display:block;font-size:18px;font-weight:600;letter-spacing:-.01em}
+.stage span{display:block;font-size:14.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+.track{position:relative;height:0}
+.dot{position:absolute;top:-13px;left:0;width:18px;height:8px;border-radius:4px;background:var(--ink);opacity:.9;animation:run 6s linear infinite}
+.dot:nth-child(2){animation-delay:-2s}.dot:nth-child(3){animation-delay:-4s}
+@keyframes run{from{transform:translateX(-30px)}to{transform:translateX(calc(min(1052px,100vw) - 110px))}}
+.pipe small{display:block;margin-top:26px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+
+/* work */
+.cases{display:grid;gap:20px}
+.case{display:grid;grid-template-columns:1fr 1.5fr;gap:20px 56px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:36px}
+.case .route{font-family:var(--mono);font-size:13px;color:var(--accent);margin-bottom:14px}
+.case h3{font-size:clamp(24px,3vw,32px);letter-spacing:-.025em;font-weight:600;line-height:1.15}
+.case .client{margin-top:12px;color:var(--muted);font-size:15px}
+.case p{color:var(--muted);font-size:17px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:22px 0 0;list-style:none}
+.tags li{font-family:var(--mono);font-size:12.5px;padding:5px 11px;border-radius:999px;background:var(--tint);color:var(--ink)}
+
+/* approach */
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink)}
+.pr{padding:26px 26px 8px 0}
+.pr+.pr{padding-left:26px;border-left:1px solid var(--line)}
+.pr h3{font-size:20px;font-weight:600;letter-spacing:-.015em;margin-bottom:10px}
+.pr p{font-size:15.5px;color:var(--muted)}
+
+/* experience */
+.job{display:grid;grid-template-columns:1fr 2fr;gap:12px 32px;padding-block:34px;border-top:1px solid var(--line)}
+.job:last-child{border-bottom:1px solid var(--line)}
+.job .when{font-family:var(--mono);font-size:13px;color:var(--muted);line-height:1.7}
+.job .when b{display:block;font-family:var(--sans);font-size:19px;font-weight:600;color:var(--ink);letter-spacing:-.015em;margin-bottom:2px}
+.job h3{font-size:20px;font-weight:600;letter-spacing:-.015em}
+.job h3 small{display:block;font-size:15px;font-weight:400;color:var(--muted);margin-top:4px;letter-spacing:0}
+.job ul{margin:16px 0 0;padding-left:20px}
+.job li{margin-bottom:9px;font-size:16px;max-width:70ch;color:var(--muted)}
+.job li::marker{color:var(--accent)}
+.job.now .when b::after{content:"Current";margin-left:10px;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:2px 9px;vertical-align:3px}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--surface)}
+.sk{padding:26px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sk:nth-child(4n){border-right:0}
+.sk:nth-last-child(-n+4){border-bottom:0}
+.sk h3{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.sk p{font-size:15.5px;line-height:1.6}
+
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.edu div{border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:26px}
+.edu b{display:block;font-size:19px;font-weight:600;letter-spacing:-.015em;margin-bottom:6px}
+.edu span{color:var(--muted);font-size:15px}
+
+/* contact */
+.contact{margin-top:96px;background:var(--ink);color:var(--bg);border-radius:28px;padding:clamp(36px,7vw,84px);display:grid;gap:30px}
+.contact h2{color:var(--bg);max-width:16ch;font-size:clamp(34px,5.4vw,68px)}
+.contact p{max-width:48ch;font-size:19px;opacity:.75}
+.contact .btn{border-color:transparent;background:var(--bg);color:var(--ink)}
+.contact .btn.ghost{background:transparent;color:var(--bg);border-color:rgba(128,140,155,.5)}
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-block:40px 8px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+
+@media (max-width:920px){
+  .hero{grid-template-columns:1fr;gap:44px;padding-block:56px 48px}
+  .head{grid-template-columns:1fr;gap:16px}
+  .case{grid-template-columns:1fr;padding:28px}
+  .principles{grid-template-columns:1fr 1fr}
+  .pr:nth-child(3){padding-left:0;border-left:0}
+  .pr:nth-child(n+3){border-top:1px solid var(--line);margin-top:26px;padding-top:26px}
+  .skills{grid-template-columns:1fr 1fr}
+  .sk:nth-child(4n){border-right:1px solid var(--line)}
+  .sk:nth-child(2n){border-right:0}
+  .sk:nth-last-child(-n+4){border-bottom:1px solid var(--line)}
+  .sk:nth-last-child(-n+2){border-bottom:0}
+  .job{grid-template-columns:1fr}
+  .numbers{grid-template-columns:1fr 1fr}
+  .num:nth-child(3){border-left:0;padding-left:0}
+  .num:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .links a:not(.pill){display:none}
+  .stages{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .track{display:none}
+  .principles,.skills,.edu{grid-template-columns:1fr}
+  .pr,.pr+.pr{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:24px;margin-top:24px}
+  .pr:first-child{border-top:0;margin-top:0;padding-top:26px}
+  .sk,.sk:nth-child(n){border-right:0;border-bottom:1px solid var(--line)}
+  .sk:last-child{border-bottom:0}
+  .pipe{padding:26px 22px}
+  section{padding-block:72px 0}
+  .card{padding:22px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .dot{animation:none;display:none}
+  .btn{transition:none}
+}
+</style>
+
+<div class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark">DB</span>Druva Bobbilla</a>
+    <nav class="links">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a class="pill" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap" id="top">
+  <header class="hero">
+    <div>
+      <div class="status"><i></i>Open to senior data engineering roles</div>
+      <h1>Data engineer. I move <span>legacy platforms to the cloud.</span></h1>
+      <p class="lede">I'm a data engineer in Dallas with 8+ years of experience. I'm currently moving Teradata, SAS and Informatica workloads at CVS Health to BigQuery. Before that I built AWS pipelines at Freddie Mac, BigQuery pipelines at AbbVie, and Hadoop pipelines at IBM.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:druvaraj.b9@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/druva-bobbilla-069412191/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <aside class="card" aria-label="Profile summary">
+      <div class="who">
+        <div class="avatar">DB</div>
+        <div><b>Druva Sai Kumar Bobbilla</b><span>Senior Data Engineer</span></div>
+      </div>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Dallas, TX</dd></div>
+        <div><dt>Now</dt><dd>Infosys · CVS Health</dd></div>
+        <div><dt>Focus</dt><dd>Cloud migration, ETL/ELT</dd></div>
+        <div><dt>Platforms</dt><dd>GCP · AWS · Snowflake</dd></div>
+        <div><dt>Education</dt><dd>M.S., Univ. of Colorado Denver</dd></div>
+      </dl>
+    </aside>
+  </header>
+
+  <div class="clients">
+    <span class="eyebrow">Clients</span>
+    <strong>CVS Health</strong><strong>Freddie Mac</strong><strong>AbbVie</strong><strong>IBM</strong>
+  </div>
+
+  <section id="approach">
+    <div class="head">
+      <h2>How I work</h2>
+      <p>On a migration, the hard part is showing the new numbers match the old ones. I build the checks in from the start.</p>
+    </div>
+    <div class="pipe">
+      <div class="stages">
+        <div class="stage" style="--c:var(--l1)"><b>Raw</b><span>Source data lands exactly as received</span></div>
+        <div class="stage" style="--c:var(--l2)"><b>Staging</b><span>Pre-ingestion checks on files, record counts and control totals</span></div>
+        <div class="stage" style="--c:var(--l3)"><b>Conformance</b><span>Cleansed, standardized and reconciled against legacy</span></div>
+        <div class="stage" style="--c:var(--l4)"><b>Curated</b><span>Consumption-ready datasets and models</span></div>
+      </div>
+      <div class="track" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <small>The four warehouse layers we used on the CVS Health BigQuery migration.</small>
+    </div>
+    <div class="principles" style="margin-top:56px">
+      <div class="pr"><h3>Check before loading</h3><p>Pre-ingestion checks and audit logging for file availability, record counts, control totals, load status and exceptions.</p></div>
+      <div class="pr"><h3>Compare with legacy</h3><p>Record counts, duplicates, nulls and column-level comparisons between the old and new platform for each migrated dataset.</p></div>
+      <div class="pr"><h3>Automate the setup</h3><p>Terraform for infrastructure, GitHub Actions for CI/CD, Airflow and Dataflow for orchestration.</p></div>
+      <div class="pr"><h3>Talk to the owners</h3><p>Sort out legacy logic with data owners and analysts, and support user acceptance testing.</p></div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="head">
+      <h2>Selected work</h2>
+      <p>Three migrations I've worked on, plus some personal projects below.</p>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <div>
+          <div class="route">Teradata · SAS · Informatica → BigQuery</div>
+          <h3>Teradata and SAS migration</h3>
+          <p class="client">Infosys for CVS Health · 2023 – present</p>
+        </div>
+        <div>
+          <p>Migrating Teradata, Oracle, SQL Server, flat-file and SAS-based processes to Google Cloud. Informatica mappings became optimized BigQuery SQL, SAS Enterprise Guide workflows moved to Dataiku and BigQuery, and Databricks handled large-scale cleansing and reconciliation.</p>
+          <ul class="tags"><li>BigQuery</li><li>Dataflow / Beam</li><li>Databricks</li><li>Terraform</li><li>GitHub Actions</li></ul>
+        </div>
+      </article>
+      <article class="case">
+        <div>
+          <div class="route">Amazon Redshift → Snowflake</div>
+          <h3>Redshift to Snowflake on an S3 data lake</h3>
+          <p class="client">Logging Inc for Freddie Mac · 2022 – 2023</p>
+        </div>
+        <div>
+          <p>Moved warehouse workloads to Snowflake with schema and model parity and minimal downtime, on a lake fed by Kinesis Firehose, Lambda and Glue, and queried through Glue Data Catalog and Athena.</p>
+          <ul class="tags"><li>Snowflake</li><li>Glue</li><li>Athena</li><li>Lambda</li><li>S3 / Parquet</li></ul>
+        </div>
+      </article>
+      <article class="case">
+        <div>
+          <div class="route">Oracle → Hadoop</div>
+          <h3>Oracle to Hadoop pipelines</h3>
+          <p class="client">IBM India · 2016 – 2019</p>
+        </div>
+        <div>
+          <p>Daily Sqoop ingestion from Oracle into Hadoop, partitioned and bucketed Hive tables, PySpark transformations, and Oozie-scheduled workflows feeding reporting data marts, with HBase for low-latency access.</p>
+          <ul class="tags"><li>Hive</li><li>PySpark</li><li>Sqoop</li><li>Oozie</li><li>HBase</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="head">
+      <h2>Personal projects</h2>
+      <p>Built on synthetic data, with tests and CI. The READMEs say what has and hasn't been run on real cloud services.</p>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <div><div class="route">Legacy table vs migrated copy</div><h3>warehouse-migration-reconciliation</h3><p class="client"><a href="https://github.com/DruvaSaiKumar/warehouse-migration-reconciliation" target="_blank" rel="noopener">GitHub</a></p></div>
+        <div><p>A command-line tool that compares a legacy table with its migrated copy: row counts, duplicate keys, column profiles, row-level diffs and an audit log.</p><ul class="tags"><li>Python</li><li>SQL</li><li>DuckDB</li><li>BigQuery</li></ul></div>
+      </article>
+      <article class="case">
+        <div><div class="route">Firehose to Athena</div><h3>aws-serverless-data-lake</h3><p class="client"><a href="https://github.com/DruvaSaiKumar/aws-serverless-data-lake" target="_blank" rel="noopener">GitHub</a></p></div>
+        <div><p>Order events land in S3, a Lambda validates them and writes partitioned Parquet, and Athena queries the result. Bad records go to quarantine. Defined in Terraform.</p><ul class="tags"><li>Firehose</li><li>Lambda</li><li>Glue</li><li>Athena</li><li>Terraform</li></ul></div>
+      </article>
+      <article class="case">
+        <div><div class="route">PySpark, dbt, Airflow</div><h3>lakehouse-kimball-pipeline</h3><p class="client"><a href="https://github.com/DruvaSaiKumar/lakehouse-kimball-pipeline" target="_blank" rel="noopener">GitHub</a></p></div>
+        <div><p>A PySpark silver layer, a dbt star schema with a Type 2 dimension, and an Airflow DAG. CI compares the Spark output with a separate DuckDB implementation.</p><ul class="tags"><li>PySpark</li><li>dbt</li><li>Airflow</li><li>DuckDB</li></ul></div>
+      </article>
+      <article class="case">
+        <div><div class="route">Checks and lineage</div><h3>dq-lineage-toolkit</h3><p class="client"><a href="https://github.com/DruvaSaiKumar/dq-lineage-toolkit" target="_blank" rel="noopener">GitHub</a></p></div>
+        <div><p>Data-quality checks written in YAML, column-level lineage parsed from SQL models, impact analysis and a report of columns with no checks.</p><ul class="tags"><li>Python</li><li>sqlglot</li><li>DuckDB</li></ul></div>
+      </article>
+      <article class="case">
+        <div><div class="route">Real-time sessionization</div><h3>kafka-clickstream-pipeline</h3><p class="client"><a href="https://github.com/DruvaSaiKumar/kafka-clickstream-pipeline" target="_blank" rel="noopener">GitHub</a></p></div>
+        <div><p>A producer and consumer on confluent-kafka that validate and deduplicate clickstream events, group them into sessions with an inactivity gap, and sink completed sessions to Kafka and Parquet. Runs end to end against a real Kafka broker in CI, not mocked.</p><ul class="tags"><li>Kafka</li><li>confluent-kafka</li><li>Python</li><li>Parquet</li></ul></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="head">
+      <h2>Experience</h2>
+      <p>Most recent first.</p>
+    </div>
+    <div>
+      <div class="job now">
+        <div class="when"><b>Infosys Limited</b>Dec 2023 – Present<br>Dallas, TX</div>
+        <div>
+          <h3>Senior Data Engineer<small>Client: CVS Health</small></h3>
+          <ul>
+            <li>Contribute to a large-scale modernization program migrating Teradata, Oracle, SQL Server, flat-file, Informatica and SAS workloads to Google Cloud and BigQuery.</li>
+            <li>Design ETL/ELT pipelines with Python, SQL, shell, Dataflow (Apache Beam) and CVS's internal EDM ingestion framework, organized into Raw, Staging, Conformance and Curated layers.</li>
+            <li>Build PySpark and Spark SQL workflows in Databricks for cleansing, joins, aggregations and reconciliation during the Teradata and SAS migration.</li>
+            <li>Built pre-ingestion validation and audit logging covering file availability, record counts, control totals, load status and exceptions.</li>
+            <li>Manage infrastructure with Terraform and ship through GitHub Actions CI/CD, with hands-on exposure to dbt and Dagster.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when"><b>Logging Inc</b>Aug 2022 – Nov 2023<br>Charlotte, NC</div>
+        <div>
+          <h3>Data Engineer<small>Client: Freddie Mac</small></h3>
+          <ul>
+            <li>Built ingestion with Kinesis Firehose into S3, triggering Lambda (Python) for downstream ETL and publishing events to SQS.</li>
+            <li>Designed Glue ETL pipelines on an S3 data lake using Parquet, with Glue Data Catalog and Athena for serverless querying.</li>
+            <li>Migrated warehouse workloads from Amazon Redshift to Snowflake with schema and model parity and minimal downtime.</li>
+            <li>Supported EMR cluster setup and scaling, and moved a data quality monitoring tool from EC2 to Lambda for better scalability and cost.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when"><b>Tata Consultancy Services</b>Oct 2021 – Aug 2022<br>Charlotte, NC</div>
+        <div>
+          <h3>Data Engineer<small>Client: AbbVie</small></h3>
+          <ul>
+            <li>Built Python cloud functions to process GCS files and load them into BigQuery.</li>
+            <li>Wrote SQL ELT transformations and stored procedures for CDC and SCD use cases, producing curated, reporting-ready datasets.</li>
+            <li>Created custom functions and authorized views in BigQuery for secure data sharing, and supported Airflow orchestration.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when"><b>Teknxpert LLC</b>Jul 2021 – Oct 2021<br>Charlotte, NC</div>
+        <div>
+          <h3>Software Engineer</h3>
+          <ul><li>Developed Java and Spring Boot backend services and RESTful APIs over SQL Server via JDBC.</li></ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when"><b>IBM India Pvt Ltd</b>Feb 2016 – Jul 2019<br>Hyderabad, India</div>
+        <div>
+          <h3>Big Data Engineer</h3>
+          <ul>
+            <li>Built Oracle-to-Hadoop pipelines with Sqoop and designed partitioned, bucketed Hive tables for warehouse performance.</li>
+            <li>Used PySpark and Spark SQL on HDFS, wrote HQL scripts and UDFs, loaded HBase for low-latency access, and scheduled workflows with Oozie.</li>
+            <li>Worked with business teams to build data marts for reporting.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="head">
+      <h2>Toolbox</h2>
+      <p>What I use most.</p>
+    </div>
+    <div class="skills">
+      <div class="sk"><h3>Languages</h3><p>Python, SQL, Shell, HQL, Java</p></div>
+      <div class="sk"><h3>Orchestration</h3><p>Airflow, dbt, Dagster, Oozie</p></div>
+      <div class="sk"><h3>Pipelines</h3><p>AWS Glue, Apache Beam / Dataflow, PySpark, Spark SQL, Databricks, Kafka</p></div>
+      <div class="sk"><h3>Warehouses</h3><p>Snowflake, BigQuery, Redshift, Teradata, Oracle, SQL Server, Hive</p></div>
+      <div class="sk"><h3>AWS</h3><p>Glue, Data Catalog, Athena, S3, EMR, Kinesis Firehose, Lambda, SQS</p></div>
+      <div class="sk"><h3>GCP and big data</h3><p>BigQuery, Dataflow, Vertex AI, Hadoop, HDFS, HBase</p></div>
+      <div class="sk"><h3>DevOps</h3><p>Git, GitHub Actions, Terraform</p></div>
+      <div class="sk"><h3>Quality and governance</h3><p>Validation, reconciliation, audit logging, metadata, lineage</p></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="head"><h2>Education</h2><p></p></div>
+    <div class="edu">
+      <div><b>Master's in Computer and Information Sciences</b><span>University of Colorado Denver · Aug 2019 – May 2021</span></div>
+      <div><b>B.Tech., Computer Science &amp; Engineering</b><span>Jawaharlal Nehru Technological University · 2009 – 2013</span></div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-block:0">
+    <div class="contact">
+      <span class="eyebrow" style="color:inherit;opacity:.6">Contact</span>
+      <h2>Get in touch</h2>
+      <p>I'm looking for senior data engineer roles. Email or LinkedIn works best.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:druvaraj.b9@gmail.com">druvaraj.b9@gmail.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/druva-bobbilla-069412191/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer><span>© Druva Sai Kumar Bobbilla</span><span>Dallas, TX</span></footer>
+</div>
+
+</body></html>
